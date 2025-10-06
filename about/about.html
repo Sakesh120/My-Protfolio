@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Sakesh Chopkar</title>
+  <link rel="stylesheet" href="about.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-left">Sakesh's Portfolio</div>
+      <button id="nav-toggle" class="nav-toggle" aria-controls="nav-right" aria-expanded="false" aria-label="Toggle menu">☰</button>
+      <div id="nav-right" class="nav-right">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="../Project/projects.html">Projects</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="about-hero" data-aos="fade-up">
+      <div class="about-left">
+        <h1>Hello, I'm <span class="purple">Sakesh Chopkar</span></h1>
+        <p class="lead">A passionate Frontend Developer crafting modern web experiences with creativity and precision.
+        </p>
+        <p class="about-letter">
+          Dear Visitor,<br><br>
+          Welcome to my portfolio! I specialize in creating responsive and interactive web applications. My journey
+          started with HTML & CSS, then expanded into JavaScript, React, and modern frontend technologies. I believe in
+          clean code, pixel-perfect designs, and seamless user experiences.<br><br>
+          Feel free to explore my work, skills, and contact me for collaboration.
+        </p>
+        <div class="hero-buttons">
+          <a href="resume.pdf" class="btn primary-btn" target="_blank" rel="noopener">📄 Download Resume</a>
+          <a href="../index.html#contact" class="btn secondary-btn">📩 Contact Me</a>
+        </div>
+      </div>
+      <div class="about-right" data-aos="fade-left">
+        <img src="../imgs/about-img.png" alt="Sakesh working illustration" class="floating-img">
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+      <h2 data-aos="fade-up">Skills & Expertise</h2>
+      <div class="skills-container">
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+          <h3>HTML5 & CSS3</h3>
+          <p>Building semantic, responsive, and accessible web pages.</p>
+        </div>
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+          <h3>JavaScript</h3>
+          <p>Interactive features, DOM manipulation, and API integration.</p>
+        </div>
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+          <h3>React.js</h3>
+          <p>Component-based development with hooks and state management.</p>
+        </div>
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+          <h3>UI/UX Design</h3>
+          <p>Designing intuitive interfaces and smooth user experiences.</p>
+        </div>
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="500">
+          <h3>Figma to Code</h3>
+          <p>Converting designs into pixel-perfect front-end implementations.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section class="timeline-section" id="experience">
+      <h2 data-aos="fade-up">Experience Timeline</h2>
+      <div class="timeline-container">
+        <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+          <span class="timeline-year">2022</span>
+          <div class="timeline-content">
+            <h3>HTML & CSS Developer</h3>
+            <p>Worked on responsive layouts, animations, and cross-browser compatibility projects.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
+          <span class="timeline-year">2023</span>
+          <div class="timeline-content">
+            <h3>JavaScript Developer</h3>
+            <p>Implemented interactive features, API calls, and enhanced UI performance.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
+          <span class="timeline-year">2024</span>
+          <div class="timeline-content">
+            <h3>React Developer</h3>
+            <p>Built component-based dynamic web applications and integrated state management.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer">
+      <div class="footer-first">
+        <h3>Sakesh's Developer Portfolio</h3>
+        <p>Crafting modern web applications with passion, precision, and creativity.</p>
+      </div>
+      <div class="footer-second">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-third">
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:sakesh@example.com">sakesh@example.com</a></p>
+        <p>Location: India</p>
+      </div>
+      <div class="footer-fourth">
+        <h4>Follow Me</h4>
+        <div class="social-icons">
+          <a href="#"><img src="imgs/facebook.png" alt="Facebook"></a>
+          <a href="#"><img src="imgs/linkedin.png" alt="LinkedIn"></a>
+          <a href="#"><img src="imgs/github.png" alt="GitHub"></a>
+          <a href="#"><img src="imgs/twitter.png" alt="Twitter"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Sakesh Chopkar. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="about.js" defer></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => { AOS.init({ duration: 1000, once: true }); });
+  </script>
+</body>
+
+</html>

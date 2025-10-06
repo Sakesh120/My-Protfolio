@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Sakesh Chopkar — Frontend Developer. Portfolio showcasing projects, skills and contact information." />
+    <title>SAC - Developer Portfolio</title>
+
+    <!-- Core styles -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/media.css" />
+
+    <!-- AOS (scroll animations) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="nav-left">Sakesh's Portfolio</div>
+
+            <!-- Hamburger button for mobile -->
+            <button id="nav-toggle" class="nav-toggle" aria-controls="nav-right" aria-expanded="false"
+                aria-label="Toggle menu">☰</button>
+
+            <div id="nav-right" class="nav-right">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about/about.html">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="Project/projects.html">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="firstSection" id="home">
+            <div class="leftSection" data-aos="fade-right">
+                <h1>Hi, My name is <span class="purple">Sakesh</span></h1>
+                <p class="lead">I am passionate</p>
+                <span id="element" aria-hidden="true"></span>
+
+                <p class="hero-subtext">
+                    I design and build modern, responsive, and interactive web applications.
+                    Turning ideas into reality with the power of frontend development.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="resume.pdf" class="btn primary-btn" target="_blank" rel="noopener">📄 Download Resume</a>
+                    <a href="#contact" class="btn secondary-btn">📩 Contact Me</a>
+                </div>
+            </div>
+
+            <div class="rightSection" data-aos="fade-left">
+                <img src="imgs/developer.png" alt="Developer illustration" class="floating-img" />
+            </div>
+        </section>
+
+        <hr />
+
+        <!-- Experience Section -->
+        <section class="secondSection" id="experience">
+            <span class="Textgray">What I have done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="experience-container">
+                <div class="exp-card" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="imgs/dev.jpg" alt="HTML Developer" class="exp-icon" />
+                    <h3>HTML Developer</h3>
+                    <p>Built structured, semantic web pages using modern HTML5 practices with accessibility in mind.</p>
+                </div>
+
+                <div class="exp-card" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="imgs/dev.jpg" alt="CSS Developer" class="exp-icon" />
+                    <h3>CSS Developer</h3>
+                    <p>Designed responsive layouts and animations with Flexbox, Grid, and modern CSS techniques.</p>
+                </div>
+
+                <div class="exp-card" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="imgs/dev.jpg" alt="JavaScript Developer" class="exp-icon" />
+                    <h3>JavaScript Developer</h3>
+                    <p>Implemented interactive features, DOM manipulation, and asynchronous API integrations.</p>
+                </div>
+
+                <div class="exp-card" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="imgs/dev.jpg" alt="Bootstrap Developer" class="exp-icon" />
+                    <h3>Bootstrap</h3>
+                    <p>Built fast, mobile-first designs with Bootstrap’s grid system and reusable components.</p>
+                </div>
+
+                <div class="exp-card" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="imgs/dev.jpg" alt="Tailwind CSS Developer" class="exp-icon" />
+                    <h3>Tailwind CSS</h3>
+                    <p>Created scalable, utility-first designs with Tailwind CSS for rapid development.</p>
+                </div>
+
+                <div class="exp-card" data-aos="zoom-in" data-aos-delay="600">
+                    <img src="imgs/dev.jpg" alt="React Developer" class="exp-icon" />
+                    <h3>React Developer</h3>
+                    <p>Built dynamic, component-based UIs with React, hooks, and state management.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Optional: small about placeholder so footer links scroll somewhere -->
+        <section id="about" class="hidden-anchor" aria-hidden="true"></section>
+        <section id="projects" class="hidden-anchor" aria-hidden="true"></section>
+        <section id="contact" class="hidden-anchor" aria-hidden="true"></section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <!-- About Section -->
+            <div class="footer-first">
+                <h3>Sakesh's Developer Portfolio</h3>
+                <p>Passionate Frontend Developer crafting clean, responsive, and user-friendly websites. Turning ideas
+                    into interactive digital experiences.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-second">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-third">
+                <h4>Contact</h4>
+                <p>Email: <a href="mailto:sakesh@example.com">sakesh@example.com</a></p>
+                <p>Location: India</p>
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer-fourth">
+                <h4>Follow Me</h4>
+                <div class="social-icons" aria-hidden="false">
+                    <a href="#" aria-label="Facebook"><img src="imgs/facebook.png" alt="Facebook icon" /></a>
+                    <a href="#" aria-label="LinkedIn"><img src="imgs/linkedin.png" alt="LinkedIn icon" /></a>
+                    <a href="#" aria-label="GitHub"><img src="imgs/github.png" alt="GitHub icon" /></a>
+                    <a href="#" aria-label="Twitter"><img src="imgs/twitter.png" alt="Twitter icon" /></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Sakesh Chopkar. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- External libraries -->
+    <!-- Typed.js (single include) -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js" defer></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+
+    <!-- Project scripts -->
+    <script src="logic.js"></script>
+</body>
+
+</html>

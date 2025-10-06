@@ -1,0 +1,87 @@
+/* Responsive rules - media.css */
+
+/* Mobile-first already supported; override where needed */
+
+/* Small devices */
+@media (max-width: 768px) {
+  .nav-right {
+    display: none;
+    position: absolute;
+    top: 56px;
+    right: 12px;
+    width: 220px;
+    background: #111827;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  }
+  .nav-right ul {
+    flex-direction: column;
+    gap: 0.85rem;
+  }
+  .nav-right.active {
+    display: block;
+  }
+  .nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .firstSection {
+    flex-direction: column;
+    text-align: center;
+    padding: 2.5rem 5%;
+  }
+  .leftSection {
+    font-size: 1rem;
+  }
+  .leftSection h1 {
+    font-size: 1.4rem;
+  }
+  #element {
+    font-size: 1.05rem;
+  }
+  .floating-img {
+    max-width: 320px;
+    width: 86%;
+  }
+
+  .experience-container {
+    gap: 1rem;
+  }
+  .exp-card {
+    padding: 1.15rem;
+  }
+}
+
+/* Medium devices */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .firstSection {
+    padding: 3rem 6%;
+  }
+  .leftSection h1 {
+    font-size: 1.8rem;
+  }
+  .floating-img {
+    max-width: 360px;
+  }
+}
+
+/* Desktop tweaks */
+@media (min-width: 1200px) {
+  .firstSection {
+    padding: 6rem 8%;
+  }
+  .leftSection h1 {
+    font-size: 2.6rem;
+  }
+  .floating-img {
+    max-width: 420px;
+  }
+}
+
+.footer a,
+.footer p {
+  word-break: break-word;
+}

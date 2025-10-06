@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAC-Developer Projects</title>
+  <link rel="stylesheet" href="projects.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-left">Sakesh's Portfolio</div>
+      <button class="nav-toggle" id="nav-toggle" aria-controls="nav-right" aria-expanded="false" aria-label="Toggle menu">☰</button>
+      <div class="nav-right" id="nav-right">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about/about.html">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="projects-hero">
+      <h1 data-aos="fade-down">My Projects</h1>
+      <p data-aos="fade-up">
+        A showcase of my creations from the 10ProjectsIn10Days challenge and more. Each project highlights my frontend
+        skills, creativity, and modern UI/UX approach.
+      </p>
+    </section>
+
+    <!-- Project Filter -->
+    <section class="projects-filter" data-aos="fade-up">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="html-css">HTML/CSS</button>
+      <button class="filter-btn" data-category="javascript">JavaScript</button>
+      <button class="filter-btn" data-category="react">React</button>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-grid" id="projects">
+      <!-- Example Project Card -->
+      <div class="project-card" data-category="javascript" data-aos="zoom-in">
+        <img src="../imgs/project1.png" alt="Calculator Project">
+        <div class="project-info">
+          <h3>Calculator App</h3>
+          <p>Day 8 of 10ProjectsIn10Days. Features: Responsive design, interactive buttons, and dark/light theme toggle.
+          </p>
+          <a href="#" class="btn primary-btn" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="html-css" data-aos="zoom-in" data-aos-delay="100">
+        <img src="../imgs/project2.png" alt="3D Navbar">
+        <div class="project-info">
+          <h3>3D Navbar UI</h3>
+          <p>Day 3 of 10ProjectsIn10Days. Features: 3D effects, interactive hover animations, and fully responsive
+            layout.</p>
+          <a href="#" class="btn primary-btn" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="javascript" data-aos="zoom-in" data-aos-delay="200">
+        <img src="../imgs/project3.png" alt="Tic Tac Toe Game">
+        <div class="project-info">
+          <h3>Tic-Tac-Toe Game</h3>
+          <p>Day 5 of 10ProjectsIn10Days. Features: Interactive gameplay, score tracking, and responsive design.</p>
+          <a href="#" class="btn primary-btn" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="react" data-aos="zoom-in" data-aos-delay="300">
+        <img src="../imgs/project4.png" alt="Weather App">
+        <div class="project-info">
+          <h3>Weather App</h3>
+          <p>Day 2 of 10ProjectsIn10Days. Features: API integration, dynamic UI, and responsive layout.</p>
+          <a href="#" class="btn primary-btn" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <!-- Add more projects similarly -->
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer">
+      <div class="footer-first">
+        <h3>Sakesh's Portfolio</h3>
+        <p>Creating clean, responsive, and interactive web applications using modern frontend technologies.</p>
+      </div>
+      <div class="footer-second">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about/about.html">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-third">
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:sakesh@example.com">sakesh@example.com</a></p>
+        <p>Location: India</p>
+      </div>
+      <div class="footer-fourth">
+        <h4>Follow Me</h4>
+        <div class="social-icons">
+          <a href="#"><img src="imgs/facebook.png" alt="Facebook"></a>
+          <a href="#"><img src="imgs/linkedin.png" alt="LinkedIn"></a>
+          <a href="#"><img src="imgs/github.png" alt="GitHub"></a>
+          <a href="#"><img src="imgs/twitter.png" alt="Twitter"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Sakesh Chopkar. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="projects.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+</body>
+
+</html>
