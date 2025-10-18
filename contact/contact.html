@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me - Sakesh Chopkar</title>
+  <meta name="description" content="Get in touch with Sakesh Chopkar - Frontend Developer. Contact form, social links, and professional information.">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="contact.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-left">Sakesh's Portfolio</div>
+      <button id="nav-toggle" class="nav-toggle" aria-controls="nav-right" aria-expanded="false" aria-label="Toggle menu">☰</button>
+      <div id="nav-right" class="nav-right">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about/about.html">About</a></li>
+          <li><a href="../Project/projects.html">Projects</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="contact-hero" data-aos="fade-up">
+      <div class="hero-content">
+        <h1>Let's <span class="purple">Connect</span></h1>
+        <p class="hero-subtitle">Ready to bring your ideas to life? I'd love to hear about your project and discuss how we can work together.</p>
+      </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-content">
+      <div class="contact-container">
+        <!-- Contact Form -->
+        <div class="contact-form-section" data-aos="fade-right">
+          <h2><i class="fas fa-envelope"></i> Send me a Message</h2>
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" required>
+              <span class="error-message" id="nameError"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required>
+              <span class="error-message" id="emailError"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <input type="text" id="subject" name="subject" required>
+              <span class="error-message" id="subjectError"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project..."></textarea>
+              <span class="error-message" id="messageError"></span>
+            </div>
+            
+            <button type="submit" class="btn primary-btn submit-btn">
+              <i class="fas fa-paper-plane"></i>
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info-section" data-aos="fade-left">
+          <h2><i class="fas fa-info-circle"></i> Get in Touch</h2>
+          
+          <div class="contact-cards">
+            <div class="contact-card" data-aos="zoom-in" data-aos-delay="100">
+              <div class="card-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <h3>Email</h3>
+              <p>sakesh@example.com</p>
+              <a href="mailto:sakesh@example.com" class="contact-link">Send Email</a>
+            </div>
+
+            <div class="contact-card" data-aos="zoom-in" data-aos-delay="200">
+              <div class="card-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <h3>Phone</h3>
+              <p>+91 98765 43210</p>
+              <a href="tel:+919876543210" class="contact-link">Call Now</a>
+            </div>
+
+            <div class="contact-card" data-aos="zoom-in" data-aos-delay="300">
+              <div class="card-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <h3>Location</h3>
+              <p>India</p>
+              <a href="#" class="contact-link">View on Map</a>
+            </div>
+
+            <div class="contact-card" data-aos="zoom-in" data-aos-delay="400">
+              <div class="card-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <h3>Response Time</h3>
+              <p>Within 24 hours</p>
+              <span class="contact-link">Usually faster</span>
+            </div>
+          </div>
+
+          <!-- Social Media -->
+          <div class="social-section" data-aos="fade-up" data-aos-delay="500">
+            <h3><i class="fas fa-share-alt"></i> Follow Me</h3>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+                <span>LinkedIn</span>
+              </a>
+              <a href="#" class="social-link" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+                <span>Twitter</span>
+              </a>
+              <a href="#" class="social-link" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" data-aos="fade-up">
+      <div class="faq-container">
+        <h2><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
+        <div class="faq-grid">
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+            <h3>What services do you offer?</h3>
+            <p>I specialize in frontend development including responsive web design, React applications, UI/UX implementation, and converting Figma designs to code.</p>
+          </div>
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+            <h3>How long does a project take?</h3>
+            <p>Project timelines vary based on complexity. Simple websites take 1-2 weeks, while complex applications can take 4-8 weeks. I'll provide a detailed timeline during our consultation.</p>
+          </div>
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+            <h3>Do you work with international clients?</h3>
+            <p>Yes! I work with clients worldwide. I'm comfortable with different time zones and can communicate effectively in English.</p>
+          </div>
+          <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+            <h3>What's your pricing structure?</h3>
+            <p>I offer competitive rates based on project scope and complexity. Contact me with your project details for a personalized quote.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer">
+      <div class="footer-first">
+        <h3>Sakesh's Developer Portfolio</h3>
+        <p>Creating modern, responsive, and interactive web applications with passion and precision.</p>
+      </div>
+      <div class="footer-second">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about/about.html">About</a></li>
+          <li><a href="../Project/projects.html">Projects</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-third">
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:sakesh@example.com">sakesh@example.com</a></p>
+        <p>Location: India</p>
+      </div>
+      <div class="footer-fourth">
+        <h4>Follow Me</h4>
+        <div class="social-icons">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Sakesh Chopkar. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="contact.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100
+      });
+    });
+  </script>
+</body>
+
+</html>

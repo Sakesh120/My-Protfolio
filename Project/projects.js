@@ -1,4 +1,3 @@
-// Navbar toggle (defensive)
 const navToggle = document.getElementById("nav-toggle");
 const navRight = document.getElementById("nav-right");
 
@@ -9,13 +8,18 @@ if (navToggle && navRight) {
   });
 }
 
-// Project Filter
+document.addEventListener('click', (e) => {
+  if (!navToggle.contains(e.target) && !navRight.contains(e.target)) {
+    navRight.classList.remove('active');
+    navToggle.setAttribute('aria-expanded', 'false');
+  }
+});
+
 const filterBtns = document.querySelectorAll(".filter-btn");
 const projects = document.querySelectorAll(".project-card");
 
 filterBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
-    // Remove active from all buttons
     filterBtns.forEach((b) => b.classList.remove("active"));
     btn.classList.add("active");
 
@@ -33,4 +37,21 @@ filterBtns.forEach((btn) => {
       }
     });
   });
+});
+
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animate-in');
+    }
+  });
+}, observerOptions);
+
+document.querySelectorAll('.project-card').forEach(el => {
+  observer.observe(el);
 });

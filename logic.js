@@ -39,4 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
       btn.style.setProperty("--mouse-y", y + "px");
     });
   });
+
+  // removed 3D tilt interactions
 });

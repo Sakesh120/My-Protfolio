@@ -1,4 +1,3 @@
-// Navbar toggle for mobile
 const navToggle = document.getElementById("nav-toggle");
 const navRight = document.getElementById("nav-right");
 
@@ -10,7 +9,13 @@ navToggle.addEventListener("click", () => {
   );
 });
 
-// Optional: Button hover effect for dynamic background
+document.addEventListener('click', (e) => {
+  if (!navToggle.contains(e.target) && !navRight.contains(e.target)) {
+    navRight.classList.remove('active');
+    navToggle.setAttribute('aria-expanded', 'false');
+  }
+});
+
 document.querySelectorAll(".btn").forEach((btn) => {
   btn.addEventListener("mousemove", (e) => {
     const rect = btn.getBoundingClientRect();
@@ -18,4 +23,21 @@ document.querySelectorAll(".btn").forEach((btn) => {
     const y = e.clientY - rect.top;
     btn.style.backgroundPosition = `${x}px ${y}px`;
   });
+});
+
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animate-in');
+    }
+  });
+}, observerOptions);
+
+document.querySelectorAll('.skill-card, .timeline-item').forEach(el => {
+  observer.observe(el);
 });
