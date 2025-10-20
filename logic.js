@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Navbar toggle (defensive)
   const navToggle = document.getElementById("nav-toggle");
   const navRight = document.getElementById("nav-right");
 
@@ -13,9 +12,9 @@ document.addEventListener("DOMContentLoaded", function () {
   if (window.Typed) {
     new Typed("#element", {
       strings: [
-        "FrontEnd developer",
-        "UI/UX designer",
-        "Figma Design to code convertor",
+        "FrontEnd development",
+        "UI/UX designing",
+        "Figma Design to code conversion",
       ],
       typeSpeed: 50,
       backSpeed: 40,
@@ -23,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Init AOS
   if (window.AOS) {
     AOS.init({
       duration: 1000,
@@ -39,6 +37,4 @@ document.addEventListener("DOMContentLoaded", function () {
       btn.style.setProperty("--mouse-y", y + "px");
     });
   });
-
-  // removed 3D tilt interactions
 });

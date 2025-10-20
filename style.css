@@ -148,7 +148,7 @@ main {
   justify-content: center;
 }
 .floating-img {
-  max-width: 100%;
+  max-width: 80%;
   border-radius: 12px;
   animation: float 3s ease-in-out infinite;
 }
