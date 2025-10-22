@@ -46,7 +46,7 @@ body {
   list-style: none;
   gap: 1rem;
   margin: 0;
-  padding: 0;
+  padding-inline: 20px;
   right: 20%;
 }
 
@@ -70,6 +70,8 @@ body {
   border: none;
   color: #fff;
   font-size: 1.4rem;
+  position: absolute;
+  right: 15%;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -242,16 +244,23 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    padding: 0.8rem 1.5rem;
+  }
+
   .nav-right {
     display: none;
     position: absolute;
-    top: 60px;
-    right: 0;
-    width: 200px;
-    background: #1e293b;
-    padding: 1rem;
-    border-radius: 8px;
+    top: 70px;
+    right: 1rem;
+    width: 150px;
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(20px);
+    padding: 1.5rem;
+    border-radius: 12px;
     flex-direction: column;
+    border: 1px solid rgba(168, 85, 247, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   }
   .nav-right.active {
     display: flex;

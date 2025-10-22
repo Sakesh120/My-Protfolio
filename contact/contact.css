@@ -754,6 +754,9 @@ footer {
   .contact-info-section {
     padding: 1.5rem;
   }
+  .contact-form-section h2 {
+    font-size: 1.4rem;
+  }
 
   .contact-cards {
     grid-template-columns: 1fr;
