@@ -72,7 +72,7 @@ body {
   font-size: 1.4rem;
   cursor: pointer;
   position: absolute;
-  right: 20%;
+  right: 13%;
   transition: all 0.3s ease;
 }
 
@@ -311,6 +311,9 @@ footer {
   }
 }
 @media (max-width: 768px) {
+  .navbar {
+    padding: 0.8rem 1.5rem;
+  }
   .nav-right {
     display: none;
     position: absolute;
@@ -343,5 +346,11 @@ footer {
   }
   .floating-img {
     max-width: 280px;
+  }
+  .footer {
+    text-align: center;
+  }
+  .footer .social-icons {
+    justify-content: center;
   }
 }

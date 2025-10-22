@@ -71,7 +71,7 @@ body {
   color: #fff;
   font-size: 1.4rem;
   position: absolute;
-  right: 15%;
+  right: 13%;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -271,5 +271,11 @@ footer {
   }
   .nav-toggle {
     display: block;
+  }
+  .footer {
+    text-align: center;
+  }
+  .footer .social-icons {
+    justify-content: center;
   }
 }
