@@ -353,4 +353,7 @@ footer {
   .footer .social-icons {
     justify-content: center;
   }
+  .hero-buttons {
+    font-size: 11px;
+  }
 }

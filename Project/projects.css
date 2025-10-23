@@ -247,6 +247,9 @@ footer {
   .navbar {
     padding: 0.8rem 1.5rem;
   }
+  .projects-filter .filter-btn {
+    font-size: 11px;
+  }
 
   .nav-right {
     display: none;
